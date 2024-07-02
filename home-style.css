@@ -142,6 +142,8 @@ html, body{
     width: 100%;
     height: 100vh;
     background-image: url('imgs/suit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,6 +239,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #414141;
 }
 
 .content-title {
@@ -248,66 +251,94 @@ html, body{
 }
 
 .content-container-main {
+    margin-top: 5rem;
     width: 80%;
     height: 100rem;
-    background-color: blue;
+    background-color: #414141;
 
 }
 
 .content-container-left {
     width: 75%;
     height: 20rem;
-    margin: 30px;
-    padding: 2rem;
-    background-color: blueviolet;
+    margin-top: 7rem;
+    background-color:gainsboro;
+    border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
+    }
+    
 .content-container-text {
     width: 50%;
     height: 100%;
-    background-color: brown;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.content-container-img {
+.content-container-text2 {
     width: 50%;
     height: 100%;
-    background-color: brown;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+        
+.content-container-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.content-container-img2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
 
 }
 
 .content-img {
     width: 100%;
     height: 100%;
-object-fit: cover;
+    object-fit: cover;
+    border-radius: 2rem;
 }
 
-
-
 .content-container-right {
+    margin-top: 7rem;
     width: 100%;
     height: 20rem;
     display: flex;
     justify-content: end;
-    background-color: black;
 }
 
 .content-container-right2 {
     width: 75%;
     height: 20rem;
-    background-color: blueviolet;
-
+    background-color: gainsboro;
+    border-radius: 2rem;
+    display: flex;
 }
 
+.titulo-container {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 9px;
+}
+    
+.container-txt {
+    font-size: 1rem;
+    margin: 2.5px
+}
 
 .legal{
     background-color: rgb(111, 111, 111);
