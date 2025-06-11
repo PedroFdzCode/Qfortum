@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QFortum</title>
+        <link rel="stylesheet" href="Sistemas-style.css">
+    </head>
+    
+    <body>
+        <style>
+            .title-container {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('imgs/Calidad2.jpg');
+            }
+            .title-container-norma {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('imgs/Calidad2.jpg');
+            }
+        </style>
+        <div class="navbar-container">
+            <img class="logo-blanco" src="QfortumW.png">
+            <div class="navbar-elements">
+                <div class="navbar-element"><a class="url" href="Home.html"><h4 class="element-text">Home</h4></a></div>
+                <div class="navbar-dropdown">
+                    <button class="url"><h4 class="element-text" >Sistemas de gestión</h4></button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-href" href="SistemasGestion.html">Calidad</a>
+                        <a class="dropdown-href" href="MedioAmbiental.html">Medio Ambiente</a>
+                        <a class="dropdown-href" href="RiesgosLaborales.html">Riesgos Laborales</a>
+                        <a class="dropdown-href" href="ProteccionDatos.html">Protección de datos</a>
+                        <a class="dropdown-href" href="Alimentario.html">Alimentario</a>
+                    </div>
+                </div>
+                <div class="navbar-element"><a class="url"><h4 class="element-text" >Contacto</h4></a></div>
+            </div>
+        </div>
+        
+        <div class="title-container">
+            <h1 class="title">Sistemas de Calidad</h1>
+        </div>
+
+        <div class="container-title">
+            <h2 class="subtitle">¿Qué es un Sistema de Calidad?</h2>
+            <a class="subtitle2">Se trata de la aplicación de técnicas y directrices,<br>
+            con el proposito de la mejora continua de los productos y servicios.<br>
+            Busqueda constante de garantizar:</a>
+        </div>
+
+        <div class="container-sistemas">
+            <div class="cards-container">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img class="card-img" src="imgs/bulbo.png">
+                            <div class="overlay">
+                                <p class="secret-txt">Experiencia y conocimiento</p>
+                            </div>
+                        </div>
+                        <div class="card-txt-container">
+                            <a class="card-txt"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img class="card-img" src="imgs/diana.png">
+                            <div class="overlay">
+                                <p class="secret-txt">Eficiencia y optimización</p>
+                            </div>
+                        </div>
+                        <div class="card-txt-container">
+                            <a class="card-txt"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img class="card-img" src="imgs/Trofeo.png">
+                            <div class="overlay">
+                                <p class="secret-txt">Conquistar Objetivos</p>
+                            </div>
+                        </div>
+                        <div class="card-txt-container">
+                            <a class="card-txt"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-trabajos">
+            <h2 class="subtitle-trabajos">¿Con que Sistemas Trabajamos?</h2>
+            <div class="container-cards">
+                <a href="#part1" class="container-card">
+                    <h3 class="title-ISO">ISO 9001</h3>
+                    <p class="content-SG">Garantiza la calidad de los productos y servicios</p>
+                </a>
+
+                <a href="#part2" class="container-card">
+                    <h3 class="title-ISO">UNE-EN 1090</h3>
+                    <p class="content-SG">Garantiza la calidad en estructuras metalicas</p>
+                </a>
+                
+                <a href="#part3" class="container-card">
+                    <h3 class="title-ISO">REAL DECRETO 163/2019</h3>
+                    <p class="content-SG">Control de producción de hormigones</p>
+                </a>
+            </div>
+        </div>
+        
+        <div id="part1" class="title-container-norma">
+            <h1 class="title-norma">ISO 9001</h1>
+            <h3 class="pie-norma">Sistemas de Calidad</h3>
+        </div>
+        
+        <div class="container-9001">
+            <h2 class="subtitle-trabajos">¿Qué es la ISO 9001?</h2>
+            <p class="subtitle2">Se trata de una de las normas ISO mas reconocidas a nivel mundial, se encarga<br>
+                de la gestión de forma continua de los servicios y productos buscando la eficiencia<br>
+                en los procesos de obtención de los mismos.
+            <br>Esto implica:</p>
+            <div class="container-more">
+                <script src="./DropDown9001.js"></script>
+                <div class="line-more"></div>
+                <button onclick="dropdown9001()" class="button">+ información</button>
+                <div class="line-more"></div>
+            </div>
+            <div id="container-9001" class="container-ext-norma">
+                <div class="container-rgt-norma">
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/angulo-de-apreton-de-manos.png">
+                            <p class="subtitle-norma">Compromiso de la dirección</p>
+                        </div>
+                        <p class="txt-norma">La alta dirección de la organización debe
+                            comprometerse con la implementación y mantenimiento del sistema de
+                            gestión de calidad (SGC) ISO 9001. Esto implica asignar recursos, definir roles y
+                            responsabilidades, y comunicar la importancia de la calidad en toda la
+                            organización.</p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/busqueda.png">
+                            <p class="subtitle-norma">Análisis de la organización</p>
+                        </div>
+                        <p class="txt-norma">Antes de implementar ISO 9001, la organización
+                            debe comprender sus procesos actuales, identificar áreas de mejora y
+                            establecer objetivos de calidad claros y medibles.</p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/encuesta-h.png">
+                            <p class="subtitle-norma">Documentación del sistema</p>
+                        </div>
+                        <p class="txt-norma">Se deben crear documentos como manuales de
+                            calidad, procedimientos operativos estándar (POE) y registros que describan
+                            cómo se llevan a cabo los procesos de la organización y cómo se garantiza la
+                            calidad.</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/cerebro.png">
+                            <p class="subtitle-norma">Capacitación del personal</p>
+                        </div>
+                        <p class="txt-norma">Todos los empleados deben comprender los
+                            requisitos de ISO 9001 y cómo afectan su trabajo. Se pueden necesitar
+                            programas de capacitación para garantizar que el personal esté calificado para
+                            cumplir con los estándares de calidad.</p>
+                    </div>
+                    <div class="container-card-norma">
+                    <div class="container-title-norma">
+                        <img class="card-img-norma" src="imgs/control-de-equipo.png">
+                        <p class="subtitle-norma">Implementación de controles de calidad</p>
+                    </div>
+                    <p class="txt-norma">Se deben establecer controles y
+                        procedimientos para monitorear y medir el desempeño de los procesos,
+                        identificar y corregir problemas de calidad, y prevenir la recurrencia de no
+                        conformidades.</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/otorgar2.png">
+                            <p class="subtitle-norma">Certificación</p>
+                        </div>
+                        <p class="txt-norma">Una vez que la organización ha implementado y operado su SGC
+                            durante un período de tiempo especificado y ha demostrado conformidad con
+                            los requisitos de ISO 9001, puede solicitar la certificación a una entidad de
+                            certificación externa.</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/cuadrado-de-bucle.png">
+                            <p class="subtitle-norma">Mejora continua</p>
+                        </div>
+                        <p class="txt-norma">ISO 9001 enfatiza la mejora continua. Las organizaciones
+                            deben monitorear constantemente su desempeño, recopilar datos sobre la
+                            satisfacción del cliente, identificar oportunidades de mejora y tomar medidas
+                            para mejorar continuamente sus procesos y productos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="part2" class="title-container-norma">
+            <h1 class="title-norma">UNE-EN 1090<h1>
+            <h3 class="pie-norma">Sistemas de Calidad</h3>
+        </div>
+        
+        <div class="container-9001">
+            <h2 class="subtitle-trabajos">¿Qué es la UNE-EN 1090?</h2>
+            <p class="subtitle2">La norma UNE-EN 1090 garantiza la calidad de los productos<br>
+                provenientes directamente del metal, afectando especialmente a aquellas empresas<br>
+                que necesitan de la comercialización de sus productos en la UE</p>
+            <div class="container-more">
+                <script src="./DropDown1090.js"></script>
+                <div class="line-more"></div>
+                <button onclick="dropdown1090()" class="button">+ información</button>
+                <div class="line-more"></div>
+            </div>
+            <div id="container-1090" class="container-ext-norma">
+                <div class="container-rgt-norma">
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/prismaticos.png">
+                            <p class="subtitle-norma">Alcance</p>
+                        </div>
+                        <p class="txt-norma">La norma establece los requisitos para la fabricacion,
+                            ensayo y certificación de estructuras de acero y aluminio, incluyendo
+                            componentes estructurales y estructuras completas.
+                        </p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/apps.png">
+                            <p class="subtitle-norma">Clasificación de la ejecución</p>
+                        </div>
+                        <p class="txt-norma">La norma define cuatro clases de ejecución,
+                            que se basan en la complejidad y el riesgo de las estructuras fabricadas.
+                            La clase de ejecución determina los requisitos 
+                            específicos que deben cumplir los fabricantes de estructuras metálicas.
+                        </p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/list.png">
+                            <p class="subtitle-norma">Requisitos de fabricación</p>
+                        </div>
+                        <p class="txt-norma">La norma establece requisitos detallados para los 
+                            procesos de fabricación de estructuras metálicas, incluyendo el diseño, la 
+                            soldadura, el corte, el mecanizado, el acabado superficial y el ensamblaje.
+                        </p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/otorgar2.png">
+                            <p class="subtitle-norma">Control de calidad</p>
+                        </div>
+                        <p class="txt-norma">Se requiere un sistema de control de calidad
+                            documentado que garantice la conformidad con los requisitos de la norma
+                            UNE-EN 1090. Esto incluye la identificación y trazabilidad de los materiales, la
+                            realización de pruebas y ensayos, y la documentación de los procesos
+                            de fabricación.</p>
+                    </div>
+                    <div class="container-card-norma">
+                    <div class="container-title-norma">
+                        <img class="card-img-norma" src="imgs/control-de-equipo.png">
+                        <p class="subtitle-norma">Mercado CE</p>
+                    </div>
+                    <p class="txt-norma">Una vez que una estructura metálica ha sido fabricada de
+                        acuerdo con los requisitos y ha pasado las pruebasy ensayos correspondientes, 
+                        debe llevar el marcado CE. Este marcado indica
+                        que la estructura cumple con los requisitos de seguridad y calidad
+                        establecidos por la normativa europea.</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/lock.png">
+                            <p class="subtitle-norma">Responsabilidades del fabricante</p>
+                        </div>
+                        <p class="txt-norma">La norma establece las responsabilidades
+                            del fabricante de estructuras metálicas, incluyendo la elaboración de la
+                            documentación técnica, la declaración de conformidad CE y la aplicación de 
+                            medidas de control de calidad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="part3" class="title-container-norma">
+            <h1 class="title-norma">Real Decreto 163/2019<h1>
+            <h3 class="pie-norma">Sistemas de Calidad</h3>
+        </div>
+        
+        <div class="container-Horm">
+            <h2 class="subtitle-trabajos">¿Qué es el Real Decreto 163/2019?</h2>
+            <p class="subtitle2">Establece la obligatoriedad del control de producción en todas<br>
+                las plantas de hormigón en España, esencial para asegurar que el hormigon utilizado<br>
+                en la construcción cumpla con los mas altos estandares de calidad y seguridad.</p>
+            <div class="container-more">
+                <script src="./DropDownHorm.js"></script>
+                <div class="line-more"></div>
+                <button onclick="dropdownHorm()" class="button">+ informacion</button>
+                <div class="line-more"></div>
+            </div>
+            <div id="container-Horm" class="container-ext-norma">
+                <div class="container-rgt-norma">
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/master-plan.png">
+                            <p class="subtitle-norma">Diagnostico y Evaluacion Final</p>
+                        </div>
+                        <p class="txt-norma">Te ayudamos a desarrollar e implementar un sistema de control
+                            de producción robusto que cumpla con los requisitos establecidos por el decreto. 
+                            Esto incluye la supervisión de materias primas, procesos de fabricación y el 
+                            control del producto final.
+                        </p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/control-de-equipo.png">
+                            <p class="subtitle-norma">Sistemas de Control de Producción</p>
+                        </div>
+                        <p class="txt-norma">Te ayudamos a desarrollar e implementar un sistema de control 
+                            de producción robusto que cumpla con los requisitos establecidos por el decreto. 
+                            Esto incluye la supervisión de materias primas, procesos de fabricación y el 
+                            control del producto final.
+                        </p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/contro-del-departamento.png">
+                            <p class="subtitle-norma">Documentación y Trazabilidad</p>
+                        </div>
+                        <p class="txt-norma">Asistimos en la creación y mantenimiento de la documentación 
+                            necesaria para asegurar la trazabilidad del hormigón producido. Esto garantiza 
+                            que podrás demostrar en cualquier momento el cumplimiento de los estándares de 
+                            calidad.
+                        </p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/otorgar2.png">
+                            <p class="subtitle-norma">Preparación para la Certificación</p>
+                        </div>
+                        <p class="txt-norma">Te guiamos en el proceso de certificación, asegurando que tu 
+                            planta de hormigón esté preparada para superar las auditorías y obtener el 
+                            certificado de conformidad emitido por los organismos acreditados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    </html>

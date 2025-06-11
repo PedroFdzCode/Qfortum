@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QFortum</title>
+        <link rel="stylesheet" href="Sistemas-style.css">
+    </head>
+    
+    <body>
+        <style>
+            .title-container {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('imgs/riesgos.jpg');
+            }
+            .title-container-norma {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('imgs/riesgos.jpg');
+            }
+        </style>
+        <div class="navbar-container">
+            <img class="logo-blanco" src="QfortumW.png">
+            <div class="navbar-elements">
+                <div class="navbar-element"><a class="url" href="Home.html"><h4 class="element-text">Home</h4></a></div>
+                <div class="navbar-dropdown">
+                    <button class="url"><h4 class="element-text" >Sistemas de gestión</h4></button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-href" href="SistemasGestion.html">Calidad</a>
+                        <a class="dropdown-href" href="MedioAmbiental.html">Medio Ambiente</a>
+                        <a class="dropdown-href" href="RiesgosLaborales.html">Riesgos Laborales</a>
+                        <a class="dropdown-href" href="ProteccionDatos.html">Protección de datos</a>
+                        <a class="dropdown-href" href="Alimentario.html">Alimentario</a>
+                    </div>
+                </div>
+                <div class="navbar-element"><a class="url"><h4 class="element-text" >Contacto</h4></a></div>
+            </div>
+        </div>
+        
+        <div class="title-container">
+            <h1 class="title">Riesgos Laborales</h1>
+        </div>
+
+        <div class="container-title">
+            <h2 class="subtitle">¿Qué es un Sistema de Prevención de Riesgos?</h2>
+            <a class="subtitle2">Su objetivo es la prevención en las diferentes actividades de<br>
+                la empresa con el fin de evitar y disminuir los riesgos<br>
+                derivados del trabajo:</a>
+        </div>
+
+        <div class="container-sistemas">
+            <div class="cards-container">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img class="card-img" src="imgs/user-shield.png">
+                            <div class="overlay">
+                                <p class="secret-txt">Protección del trabajador</p>
+                            </div>
+                        </div>
+                        <div class="card-txt-container">
+                            <a class="card-txt"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img class="card-img" src="imgs/head-side-mask (1).png">
+                            <div class="overlay">
+                                <p class="secret-txt">Vigilancia del estado del trabajador</p>
+                            </div>
+                        </div>
+                        <div class="card-txt-container">
+                            <a class="card-txt"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img class="card-img" src="imgs/bone-break.png">
+                            <div class="overlay">
+                                <p class="secret-txt">Sustitución de lo peligroso por un riesgo nulo</p>
+                            </div>
+                        </div>
+                        <div class="card-txt-container">
+                            <a class="card-txt"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-trabajos">
+            <h2 class="subtitle-trabajos">¿Con que Sistemas Trabajamos?</h2>
+            <div class="container-cards">
+                <a href="#part1" class="container-card">
+                    <h3 class="title-ISO">ISO 45001</h3>
+                    <p class="content-SG">Gestiona los riesgos en los procesos de una organizacion.</p>
+                </a>
+            </div>
+        </div>
+        
+        <div id="part1" class="title-container-norma">
+            <h1 class="title-norma">ISO 45001</h1>
+            <h3 class="pie-norma">Sistema de gestión de riesgos laborales</h3>
+        </div>
+        
+        <div class="container-9001">
+            <h2 class="subtitle-trabajos">Que es la ISO 45001?</h2>
+            <p class="subtitle2">Se trata de un marco de referencia para la gestión de riesgos
+            <br>y asi prevenir lesiones y el deterioro de la salud de los trabajadores<br>
+            minimizando los riesgos de que estos ocurran.
+            <br>Esto implica:</p>
+            <div class="container-more">
+                <script src="./DropDown9001.js"></script>
+                <div class="line-more"></div>
+                <button onclick="dropdown9001()" class="button">+ información</button>
+                <div class="line-more"></div>
+            </div>
+            <div id="container-9001" class="container-ext-norma">
+                <div class="container-rgt-norma">
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/angulo-de-apreton-de-manos.png">
+                            <p class="subtitle-norma">Compromiso de la dirección</p>
+                        </div>
+                        <p class="txt-norma">La alta dirección de la organización debe 
+                            comprometerse con la implementación y mantenimiento del sistema de 
+                            gestión de seguridad y salud en el trabajo (SST) ISO 45001. Esto 
+                            implica asignar recursos, definir roles y responsabilidades, y 
+                            comunicar la importancia de la seguridad y salud en el trabajo en 
+                            toda la organización.</p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/bone-break (1).png">
+                            <p class="subtitle-norma">Política de seguridad y salud</p>
+                        </div>
+                        <p class="txt-norma">La organización debe desarrollar una política de SST 
+                            que establezca sus compromisos para prevenir lesiones y enfermedades 
+                            laborales, cumplir con la legislación aplicable y mejorar continuamente 
+                            su desempeño en materia de seguridad y salud.</p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/triangle-warning.png">
+                            <p class="subtitle-norma">Identificación y evaluación de riesgos </p>
+                        </div>
+                        <p class="txt-norma">Se deben identificar los peligros y evaluar los riesgos
+                            asociados con las actividades laborales de la organización. 
+                            Basado en esta evaluación, se establecen controles para eliminar o 
+                            reducir los riesgos a un nivel aceptable.</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/cerebro.png">
+                            <p class="subtitle-norma">Capacitación del personal</p>
+                        </div>
+                        <p class="txt-norma">La organización debe proporcionar capacitación adecuada
+                            a los empleados para que puedan realizar sus tareas de manera segura y 
+                            saludable. Esto incluye la capacitación en procedimientos de trabajo seguros,
+                            el uso adecuado de equipos de protección personal y la respuesta a emergencias.
+                        </p>
+                    </div>
+                    <div class="container-card-norma">
+                    <div class="container-title-norma">
+                        <img class="card-img-norma" src="imgs/control-de-equipo.png">
+                        <p class="subtitle-norma">Participacion y consulta de trabajadores</p>
+                    </div>
+                    <p class="txt-norma">Se debe establecer un proceso para que los empleados participen 
+                        en la identificación de peligros, la evaluación de riesgos y la toma de decisiones 
+                        relacionadas con la seguridad y salud en el trabajo.
+                    </p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/light-emergency-on.png">
+                            <p class="subtitle-norma">Planificación y respuesta ante emergencias</p>
+                        </div>
+                        <p class="txt-norma">Una vez que la organización ha implementado y operado su SGC
+                            durante un período de tiempo especificado y ha demostrado conformidad con
+                            los requisitos de ISO 9001, puede solicitar la certificación a una entidad de
+                            certificación externa.</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/dashboard-monitor.png">
+                            <p class="subtitle-norma">Monitoreo y medición del desempeño en SST</p>
+                        </div>
+                        <p class="txt-norma">ISO 9001 enfatiza la mejora continua. Las organizaciones
+                            deben monitorear constantemente su desempeño, recopilar datos sobre la
+                            satisfacción del cliente, identificar oportunidades de mejora y tomar medidas
+                            para mejorar continuamente sus procesos y productos.
+                        </p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/user-police.png">
+                            <p class="subtitle-norma">Auditorías internas</p>
+                        </div>
+                        <p class="txt-norma">La organización debe realizar auditorías internas periódicas 
+                            para evaluar el cumplimiento con los requisitos de ISO 45001 y la efectividad
+                            del sistema de gestión de SST. La alta dirección debe revisar regularmente el
+                            desempeño en SST y tomar medidas para mejorar continuamente el sistema.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    </html>

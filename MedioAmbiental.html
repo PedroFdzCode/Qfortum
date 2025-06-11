@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QFortum</title>
+        <link rel="stylesheet" href="Sistemas-style.css">
+    </head>
+    
+    <body>
+        <style>
+            .title-container {
+                background-image: url('imgs/MedioAmbiente.jpg');
+            }
+            .title-container-norma {
+                background-image: url('imgs/MedioAmbiente.jpg');
+            }
+        </style>
+        <div class="navbar-container">
+            <img class="logo-blanco" src="QfortumW.png">
+            <div class="navbar-elements">
+                <div class="navbar-element"><a class="url" href="Home.html"><h4 class="element-text">Home</h4></a></div>
+                <div class="navbar-dropdown">
+                    <button class="url"><h4 class="element-text" >Sistemas de gestion</h4></button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-href" href="SistemasGestion.html">Calidad</a>
+                        <a class="dropdown-href" href="MedioAmbiental.html">Medio Ambiente</a>
+                        <a class="dropdown-href" href="RiesgosLaborales.html">Riesgos Laborales</a>
+                        <a class="dropdown-href" href="ProteccionDatos.html">Proteccion de datos</a>
+                        <a class="dropdown-href" href="Alimentario.html">Alimentario</a>
+                    </div>
+                </div>
+                <div class="navbar-element"><a class="url"><h4 class="element-text" >Contacto</h4></a></div>
+            </div>
+        </div>
+        
+        <div class="title-container">
+            <h1 class="title">Medio Ambiente</h1>
+        </div>
+
+        <div class="container-title">
+            <h2 class="subtitle">¿Qué es un Sistema Medio Ambiental?</h2>
+            <a class="subtitle2">Se trata de la aplicación de tecnicas y directrices<br>
+                con el proposito de la mejora constante del desempeño<br>
+                medioambiental de una organización:</a>
+        </div>
+
+        <div class="container-sistemas">
+            <div class="cards-container">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img class="card-img" src="imgs/leaf.png">
+                            <div class="overlay">
+                                <p class="secret-txt">Respeto con el medioambiente</p>
+                            </div>
+                        </div>
+                        <div class="card-txt-container">
+                            <a class="card-txt"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img class="card-img" src="imgs/sparkles.png">
+                            <div class="overlay">
+                                <p class="secret-txt">Mejora de la imagen</p>
+                            </div>
+                        </div>
+                        <div class="card-txt-container">
+                            <a class="card-txt"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img class="card-img" src="imgs/shop.png">
+                            <div class="overlay">
+                                <p class="secret-txt">Acceso a nuevos mercados</p>
+                            </div>
+                        </div>
+                        <div class="card-txt-container">
+                            <a class="card-txt"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-trabajos">
+            <h2 class="subtitle-trabajos">Con que Sistemas Trabajamos?</h2>
+            <div class="container-cards">
+                <a href="#part1" class="container-card">
+                    <h3 class="title-ISO">ISO 14001</h3>
+                    <p class="content-SG">Mejora el desempeño ambiental de una organización.</p>
+                </a>
+                <a href="#part3" class="container-card">
+                    <h3 class="title-ISO">Huella Carbono</h3>
+                    <p class="content-SG">Calculo de emisiones de gases invernadero.</p>
+                </a>
+                <a href="#part2" class="container-card">
+                    <h3 class="title-ISO">ISO 50001</h3>
+                    <p class="content-SG">Sistema de gestión de la energia de la organización.</p>
+                </a>
+            </div>
+        </div>
+        
+        <div id="part1" class="title-container-norma">
+            <h1 class="title-norma">ISO 14001</h1>
+            <h3 class="pie-norma">Sistemas de MedioAmbiente</h3>
+        </div>
+        
+        <div class="container-9001">
+            <h2 class="subtitle-trabajos">¿Qué es la ISO 14001?</h2>
+            <p class="subtitle2">Se trata de la norma ISO encargada de la gestión del riesgo medioambiental
+            <br>que pueda desarrollarse en una organización, por ello, busca la<br>gestión continua de
+            los procesos en busqueda de este posible riesgo.
+            <br>Esto implica:</p>
+            <div class="container-more">
+                <script src="./DropDown9001.js"></script>
+                <div class="line-more"></div>
+                <button onclick="dropdown9001()" class="button">+ información</button>
+                <div class="line-more"></div>
+            </div>
+            <div id="container-9001" class="container-ext-norma">
+                <div class="container-rgt-norma">
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/angulo-de-apreton-de-manos.png">
+                            <p class="subtitle-norma">Compromiso de la dirección</p>
+                        </div>
+                        <p class="txt-norma">La alta dirección de la organización debe
+                            comprometerse con la implementación y mantenimiento del sistema de
+                            gestión de calidad (SGC) ISO 9001. Esto implica asignar recursos, definir roles y
+                            responsabilidades, y comunicar la importancia de la calidad en toda la
+                            organización.</p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/busqueda.png">
+                            <p class="subtitle-norma">Análisis de la organización</p>
+                        </div>
+                        <p class="txt-norma">Antes de implementar ISO 9001, la organización
+                            debe comprender sus procesos actuales, identificar áreas de mejora y
+                            establecer objetivos de calidad claros y medibles.</p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/encuesta-h.png">
+                            <p class="subtitle-norma">Documentación del sistema</p>
+                        </div>
+                        <p class="txt-norma">Se deben crear documentos como manuales de
+                            calidad, procedimientos operativos estándar (POE) y registros que describan
+                            cómo se llevan a cabo los procesos de la organización y cómo se garantiza la
+                            calidad..</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/cerebro.png">
+                            <p class="subtitle-norma">Capacitación del personal</p>
+                        </div>
+                        <p class="txt-norma">Todos los empleados deben comprender los
+                            requisitos de ISO 9001 y cómo afectan su trabajo. Se pueden necesitar
+                            programas de capacitación para garantizar que el personal esté calificado para
+                            cumplir con los estándares de calidad.</p>
+                    </div>
+                    <div class="container-card-norma">
+                    <div class="container-title-norma">
+                        <img class="card-img-norma" src="imgs/control-de-equipo.png">
+                        <p class="subtitle-norma">Implementación de controles de calidad</p>
+                    </div>
+                    <p class="txt-norma">Se deben establecer controles y
+                        procedimientos para monitorear y medir el desempeño de los procesos,
+                        identificar y corregir problemas de calidad, y prevenir la recurrencia de no
+                            conformidades.</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/otorgar2.png">
+                            <p class="subtitle-norma">Certificación</p>
+                        </div>
+                        <p class="txt-norma">Una vez que la organización ha implementado y operado su SGC
+                            durante un período de tiempo especificado y ha demostrado conformidad con
+                            los requisitos de ISO 9001, puede solicitar la certificación a una entidad de
+                            certificación externa.</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/cuadrado-de-bucle.png">
+                            <p class="subtitle-norma">Mejora continua</p>
+                        </div>
+                        <p class="txt-norma">ISO 9001 enfatiza la mejora continua. Las organizaciones
+                            deben monitorear constantemente su desempeño, recopilar datos sobre la
+                            satisfacción del cliente, identificar oportunidades de mejora y tomar medidas
+                            para mejorar continuamente sus procesos y productos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="part2" class="title-container-norma">
+            <h1 class="title-norma">ISO 50001<h1>
+            <h3 class="pie-norma">Sistemas de MedioAmbiente</h3>
+        </div>
+        
+        <div class="container-9001">
+            <h2 class="subtitle-trabajos">¿Qué es la ISO 50001?</h2>
+            <p class="subtitle2">Norma enfocada en la gestión y en el calculo de la energia<br>
+                utilizada en los procesos de obtención de sus productos mejorando la eficiencia<br>
+                e impulsando el ahorro en las actividades.</p>
+            <div class="container-more">
+                <script src="./DropDown1090.js"></script>
+                <div class="line-more"></div>
+                <button onclick="dropdown1090()" class="button">+ información</button>
+                <div class="line-more"></div>
+            </div>
+            <div id="container-1090" class="container-ext-norma">
+                <div class="container-rgt-norma">
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/angulo-de-apreton-de-manos.png">
+                            <p class="subtitle-norma">Compromiso de la dirección</p>
+                        </div>
+                        <p class="txt-norma">La alta dirección de la organización debe comprometerse con la implementación 
+                            y el mantenimiento del sistema de gestión de energía ISO 50001. 
+                            Esto implica asignar recursos, definir roles y responsabilidades, 
+                            y comunicar la importancia de la gestión de la energía en toda la organización.
+                        </p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/bio-leaves.png">
+                            <p class="subtitle-norma">Política energética</p>
+                        </div>
+                        <p class="txt-norma">La organización debe desarrollar una política energética 
+                            que establezca sus compromisos para mejorar la eficiencia energética, 
+                            reducir el consumo de energía y promover el uso de fuentes de energía 
+                            renovable cuando sea posible.
+                        </p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/list.png">
+                            <p class="subtitle-norma">Planificación energética</p>
+                        </div>
+                        <p class="txt-norma">Se deben establecer objetivos y metas energéticas claras y 
+                            medibles basadas en un análisis de la situación energética de la organización. 
+                            Esto implica identificar las áreas de mayor consumo de energía y 
+                            las oportunidades de mejora.
+                        </p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/master-plan.png">
+                            <p class="subtitle-norma">Implementación y operación</p>
+                        </div>
+                        <p class="txt-norma">La organización debe desarrollar y documentar procedimientos 
+                            para controlar y mejorar la eficiencia energética en todas las áreas de su actividad. 
+                            Esto puede incluir la implementación de tecnologías de ahorro de energía, 
+                            la optimización de procesos y la sensibilización del personal.
+                        </p>
+                    </div>
+                    <div class="container-card-norma">
+                    <div class="container-title-norma">
+                        <img class="card-img-norma" src="imgs/recycle.png">
+                        <p class="subtitle-norma">Seguimiento del desempeño energético</p>
+                    </div>
+                    <p class="txt-norma">Se deben establecer indicadores de desempeño energético para monitorear 
+                        y medir el consumo de energía y el cumplimiento de los objetivos y metas 
+                        energéticas establecidos.</p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/cuadrado-de-bucle.png">
+                            <p class="subtitle-norma">Revisión del sistema de gestión</p>
+                        </div>
+                        <p class="txt-norma">La organización debe realizar revisiones periódicas del sistema de 
+                            gestión de energía para evaluar su eficacia y tomar medidas para mejorar continuamente 
+                            el desempeño energético.
+                        </p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/user-police.png">
+                            <p class="subtitle-norma">Auditorías internas</p>
+                        </div>
+                        <p class="txt-norma">Se deben llevar a cabo auditorías internas periódicas para verificar el 
+                            cumplimiento con los requisitos de ISO 50001 y la efectividad del sistema de gestión de 
+                            energía. La alta dirección debe revisar regularmente el desempeño energético y tomar 
+                            medidas para garantizar la mejora continua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="part3" class="title-container-norma">
+            <h1 class="title-norma">Huella de carbono<h1>
+            <h3 class="pie-norma">Sistemas de MedioAmbiente</h3>
+        </div>
+        
+        <div class="container-Horm">
+            <h2 class="subtitle-trabajos">¿Qué es el calculo de la Huella de carbono?</h2>
+            <p class="subtitle2">El cálculo de la huella de carbono es un proceso mediante el cual se<br>
+                cuantifica la cantidad total de emisiones de gases de efecto invernadero asociadas con<br>
+                las actividades de una organización, producto, servicio o evento.<br>
+                Los principales referenciales empleados para la determinación de la huella de carbono<br>
+                son ISO 14064 y GHG Protocol.
+            </p>
+            <div class="container-more">
+                <script src="./DropDownHorm.js"></script>
+                <div class="line-more"></div>
+                <button onclick="dropdownHorm()" class="button">+ información</button>
+                <div class="line-more"></div>
+            </div>
+            <div id="container-Horm" class="container-ext-norma">
+                <div class="container-rgt-norma">
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/prismaticos.png">
+                            <p class="subtitle-norma">Alcance y Limite</p>
+                        </div>
+                        <p class="txt-norma">Definir el alcance del análisis y los límites del sistema.
+                            Esto implica identificar todas las fuentes de emisiones directas e indirectas
+                            asociadas con las actividades de interés, así como establecer el período de 
+                            tiempo que se va a analizar.
+                        </p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/dashboard-monitor.png">
+                            <p class="subtitle-norma">Recopilación de datos</p>
+                        </div>
+                        <p class="txt-norma">La organización debe desarrollar una política energética 
+                            que establezca sus compromisos para mejorar la eficiencia energética, 
+                            reducir el consumo de energía y promover el uso de fuentes de energía 
+                            renovable cuando sea posible.
+                        </p>
+                    </div>
+
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/smoke.png">
+                            <p class="subtitle-norma">Cálculo de emisiones</p>
+                        </div>
+                        <p class="txt-norma">Utilizar metodologías y herramientas reconocidas para calcular
+                            las emisiones de GEI asociadas con cada fuente identificada.
+                            Estas metodologías pueden variar dependiendo del tipo de actividad y los gases 
+                            involucrados, pero generalmente se basan en factores de emisión y datos de 
+                            actividad de la organización.
+                        </p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/equality.png">
+                            <p class="subtitle-norma">Normalización y equivalencia</p>
+                        </div>
+                        <p class="txt-norma">La organización debe desarrollar y documentar procedimientos 
+                            para controlar y mejorar la eficiencia energética en todas las áreas de su actividad. 
+                            Esto puede incluir la implementación de tecnologías de ahorro de energía, 
+                            la optimización de procesos y la sensibilización del personal.
+                        </p>
+                    </div>
+                    <div class="container-card-norma">
+                    <div class="container-title-norma">
+                        <img class="card-img-norma" src="imgs/test.png">
+                        <p class="subtitle-norma">Análisis y presentación de resultados</p>
+                    </div>
+                    <p class="txt-norma">Analizar los resultados del cálculo de la huella de carbono para identificar
+                        las principales fuentes de emisiones, las áreas de oportunidad para la reducción de emisiones
+                        y los impactos ambientales asociados. Estos resultados suelen presentarse en forma de 
+                        informes y gráficos para facilitar la comprensión y la toma de decisiones.
+                    </p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/briefcase.png">
+                            <p class="subtitle-norma">Plan de acción</p>
+                        </div>
+                        <p class="txt-norma">Desarrollar un plan de acción para reducir las emisiones de GEI identificadas
+                            y mejorar la eficiencia ambiental de la organización. Esto puede incluir la implementación de
+                            medidas de eficiencia energética, la adopción de tecnologías más limpias, la optimización de 
+                            procesos y la compensación de emisiones, entre otras acciones.
+                        </p>
+                    </div>
+                    <div class="container-card-norma">
+                        <div class="container-title-norma">
+                            <img class="card-img-norma" src="imgs/user-police.png">
+                            <p class="subtitle-norma">Auditoría y Verificación externa</p>
+                        </div>
+                        <p class="txt-norma">Permite la revisión del cálculo y su metodología por parte de Entidad de 
+                            Certificación, lo que aporta reconocimiento externo del cumplimiento con ISO 14064 o 
+                            GHG Protocol, así como la obtención de un certificado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    </html>

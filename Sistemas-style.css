@@ -1,0 +1,563 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+.navbar-container {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-element {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-dropdown {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-dropdown:hover {
+    background-color: #bbbbbb54;
+}
+
+.navbar-element:hover {
+    background-color: #bbbbbb54;
+}
+
+.navbar-elements {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.element-text {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logo {
+    width: 10rem;
+    height: 7rem;
+}
+
+.logo-blanco {
+    width: 8rem;
+    height: 5rem;
+    z-index: 100;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+}
+
+.title-container {
+    width: 100%;
+    height: 50vh;
+    background-image: url('imgs/suit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    overflow: hidden;
+}
+
+.title-container-medio {
+    width: 100%;
+    height: 50vh;
+    background-image: url('imgs/suit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    overflow: hidden;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 5rem;
+    /* line-height: 2;
+    text-transform: uppercase; */
+    margin-left: 1.5rem; 
+}
+
+.url {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    width: 100%;
+    background-color: #a3a3a3ef;
+    /* position: absolute; */
+    display: none;
+    flex-direction: column;
+    min-width: 160px;
+}
+
+.dropdown-href {
+    /* width: 100%; */
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    height: 3em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown-href:hover {
+    background-color: #aaaaaa;
+}
+
+.container-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.subtitle {
+    font-size: 3.5rem;
+    margin: 1rem;
+    margin-top: 1.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.subtitle2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: #7c7c7c;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-sistemas {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    
+.card-container {
+    margin-top: 2rem;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.card-container2 {
+    margin-top: 4rem;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-img-container:hover .overlay{
+    opacity: 1;
+}
+
+.overlay{
+    background-color:#7c7c7c;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.card-img {
+    width: 6.5rem;
+    height: 6.5rem;
+}
+    
+.card-img-container {
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+    background-color: #a0a0a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+    
+.card-txt-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-txt {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.secret-txt {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}
+
+
+.container-more {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.container-questions {
+    display: flex;
+    white-space: nowrap;
+    margin: 1rem;
+    color: #919191;
+}
+
+.more-info {
+    white-space: nowrap;
+    margin: 1rem;
+    color: #919191;
+}
+
+.line-more {
+    height: 3px;
+    width:25%;
+    background-color: #bbbbbb;
+}
+
+.container-contenido {
+    width: 100%;
+    height: 50rem;
+}
+
+.container-lft {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-big-card {
+    width: 30rem;
+    height: 35rem;
+    background-color: #e9e9e9;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.container-right{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+}
+
+.question-BC {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    font-size: 2rem;
+    color:#7c7c7c;
+    margin: 0;
+}
+
+.container-content-BC {
+    height: 70%;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content-BC {
+    width: 85%;
+    margin: 0;
+    color:#7c7c7c;
+    font-size: 1.2rem;
+    white-space: normal;
+    text-align: center;
+}
+
+.container-line {
+    height: 1900px;
+    width: 10%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.123) 0%,rgba(255,50,50,1) 20%, rgba(255,50,50,1) 80%, rgba(255, 255, 255, 0.329) 100%);
+    border-radius: 1rem;
+}
+
+.line {
+    position: relative;
+    height: 0.25rem;
+    width: 4%;
+    background-color: rgb(255, 106, 106);
+}
+.line-rgt {
+    position: relative;
+    height: 0.25rem;
+    width: 3rem;
+    background: linear-gradient(0deg, rgba(255,106,106,0.2359068627450981) 0%, rgba(255,106,106,1) 51%, rgba(255,106,106,0.16307773109243695) 100%);
+    right: 12%;
+    bottom: 53%;
+}
+
+
+.container-trabajos {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e9e9e9;
+}
+
+.container-cards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-card {
+    text-decoration: none;
+    margin: 2rem;
+    width: 30rem;
+    background-color: #bbbbbb;
+    border-radius: 2rem;
+}
+
+.container-card:hover {
+    background-color: #ff3535;
+}
+
+.subtitle-trabajos {
+    font-size: 3.5rem;
+    margin: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title-ISO {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-size: 3.5rem;
+    color:#ffffff;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    padding-right:1.5rem;
+}
+
+.content-SG {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    color:#ffffff;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.container-9001{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    background-color: #ffffff;
+    margin-bottom: 5rem;
+}
+
+.container-Horm{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    background-color: #ffffff;
+    margin-bottom: 5rem;
+}
+
+.container-9001-cards {
+    width: 100%;
+    height: 100%;
+}
+
+.container-ext-norma {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-lft-norma {
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.container-rgt-norma {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-card-norma {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    background-color: #e9e9e9;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin: 1.5rem;
+}
+
+.subtitle-norma {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    font-size: 2rem;
+}
+
+.txt-norma {
+    font-size: 1.2rem;
+    white-space: normal;
+    box-sizing: border-box;
+    padding: 2rem;
+    color:#7c7c7c;
+    margin-top: 0;
+}
+
+.card-img-norma {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.container-title-norma {
+    width: 95%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container-norma {
+    width: 100%;
+    background-image: url('imgs/suit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.title-norma {
+    margin:0;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.pie-norma {
+    margin:0;
+    width: 20%;
+    height: 100%;
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}

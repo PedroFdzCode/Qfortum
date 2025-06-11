@@ -9,116 +9,73 @@
     
     <body>
         <div class="navbar-container">
-            <img class="logo-blanco" src="QfortumW.png">
+            <img class="logo-blanco" src="imgs/QfortumW.png">
             <div class="navbar-elements">
-                <div class="navbar-element"><h4 class="element-text">About Us</h4></div>
-                <div class="navbar-element"><h4 class="element-text">Sistemas de gestion</h4></div>
-                <div class="navbar-element"><h4 class="element-text">Contacto</h4></div>
-                
+                <div class="navbar-element"><a class="url" href="Home.html"><h4 class="element-text">Home</h4></a></div>
+                <div class="navbar-dropdown">
+                    <button class="url"><h4 class="element-text" >Sistemas de gestion</h4></button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-href" href="SistemasGestion.html">Calidad</a>
+                        <a class="dropdown-href" href="MedioAmbiental.html">Medio Ambiente</a>
+                        <a class="dropdown-href" href="RiesgosLaborales.html">Riesgos Laborales</a>
+                        <a class="dropdown-href" href="ProteccionDatos.html">Proteccion de datos</a>
+                        <a class="dropdown-href" href="Alimentario.html">Alimentario</a>
+                    </div>
+                </div>
+                <div class="navbar-element"><a href="#part1" class="url"><h4 class="element-text">Contacto</h4></a></div>
             </div>
         </div>
         
         <div class="title-container">
-            <h1 class="title">Consultoria de calidad en Almería!</h1>
+            <h1 class="title">Consultoria de calidad<br>en Almería!</h1>
             <a class="subtitle"><b>"Impulsamos el éxito y la excelencia en la gestión de la calidad<br>
              para empresas de todos los tamaños y sectores industriales"</b></a>
         </div>
 
         <div class="desplegable">
-            <img class="logo" src="QfortumB.png">
+            <img class="logo" src="imgs/QfortumB.png">
         </div>
-
-       
 
         <div class="about-us"> 
             <div class="about-us-title-container"><h3 class="about-us-title">Sobre Nosotros!</h3></div>
             <div class="about-us-container">
-                <div class="about-us-containers">
-
-                    <div class="about-us-container-img">
-                        <img class="about-us-img" src="imgs/pacto.jpg">
-                    </div>
-                    <div class="about-us-container-txt">
-                        <div class="about-us-text">Mas de 7 años de experiencia implantando sistemas de gestion</div>
-                    </div>
-                    
-                    
-                </div>
-                <div class="about-us-containers">
-
-                    <div class="about-us-container-img">
-                        <img class="about-us-img" src="imgs/cabo.jpg">
-                    </div>
-                    <div class="about-us-container-img">
-                        <div class="about-us-text">Lideres en la región de Almeria en implantación de normas</div>
-                    </div>
-                    
-                    
-                </div>
-                <div class="about-us-containers">
-
-                    <div class="about-us-container-img">
-                        <img class="about-us-img" src="imgs/pacto.jpg">
-                    </div>
-                    <div class="about-us-container-img">
-                        <div class="about-us-text">Mas de 7 años de experiencia implantando sistemas de gestion</div>
-                    </div>
-                    
-                    
-                </div>
+                <p class="about-us-txt">
+                    En Qualitas Fortum Impulsamos la excelencia en la implementación de sistemas de gestión
+                    reconocidas a nivel mundial. Tenemos mas de 12 años de experiencia en el sector en los
+                    cuales hemos perfeccionado nuestros servicios ofreciendo una respuesta mas personalizada,
+                    mejorando el cumplimiento normativo y los procesos internos, potenciando así la competitividad
+                    de nuestros clientes.
+                </p>
+                <div class="about-us-img"></div>
             </div>
         </div>
 
-
-        <div class="content-container">
-
-            <div class="content-container-main">
-                <div class="content-title">
-                    <h3 class="about-us-title">Sobre Nosotros!</h3>
-                </div>
-
-                <div class="content-container-left">
-                    <div class="content-container-text">
-                        <h4 class="titulo-container">Sistemas de Gestion!</h4>
-                        <a class="container-txt">ISO 9001 - SISTEMA DE PREVENCION</a>
-                        <a class="container-txt">ISO 9001 - SISTEMA DE PREVENCION</a>
-                        <a class="container-txt">ISO 9001 - SISTEMA DE PREVENCION</a>
-                    </div>
-                    <div class="content-container-img"> <img class="content-img" src="imgs/gestion.jpg"></div>
-                </div>
-        
-        
-                <div class="content-container-right">
-                    <div class="content-container-right2">
-
-                        <div class="content-container-img2"> <img class="content-img" src="imgs/bio.jpg"></div>
-                        <div class="content-container-text2">
-                            <h4 class="titulo-container">Sistemas de<br>MedioAmbiente</h4>
-                            <a class="container-txt">ISO 9001 - SISTEMA DE PREVENCION</a>
-                            <a class="container-txt">ISO 9001 - SISTEMA DE PREVENCION</a>
-                            <a class="container-txt">ISO 9001 - SISTEMA DE PREVENCION</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="content-container-left">
-                    <div class="content-container-text">
-                        <h4 class="titulo-container">Tecnologias!</h4>
-                        <a class="container-txt">Proteccion de datos</a>
-                    </div>
-                    <div class="content-container-img"> <img class="content-img" src="imgs/gestion.jpg"></div>
-                </div>
-
-
-                <div class="content-container-right">
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
-                </div>
-    
+        <div class="container-trabajos">
+            <h2 class="subtitle-trabajos">¿En que Sectores Trabajamos?</h2>
+            <div class="container-cards">
+                <a href="SistemasGestion.html" class="container-card">
+                    <h3 class="title-ISO">Calidad</h3>
+                    <p class="content-SG">Garantiza la calidad de los productos y servicios</p>
+                </a>
+                <a href="MedioAmbiental.html" class="container-card">
+                    <h3 class="title-ISO">Medio Ambiente</h3>
+                    <p class="content-SG">Mejora del desempeno medioambiental</p>
+                </a>
+                <a href="RiesgosLaborales.html" class="container-card">
+                    <h3 class="title-ISO">Riesgos Laborales</h3>
+                    <p class="content-SG">Gestión de la seguridad y la salud en el trabajo</p>
+                </a>
+                <a href="ProteccionDatos.html" class="container-card">
+                    <h3 class="title-ISO">Protección de Datos</h3>
+                    <p class="content-SG">Privacidad y seguridad de la información</p>
+                </a>
+                <a href="Alimentario.html" class="container-card">
+                    <h3 class="title-ISO">Alimentación</h3>
+                    <p class="content-SG">Manrtenimiento de la calidad del producto alimentario</p>
+                </a>
             </div>
         </div>
+
         <div class="distincion"> 
             <div class="about-us-title-container"><h3 class="about-us-title">¿Que nos distingue?</h3></div>
             <div class="distincion-container">
@@ -162,11 +119,36 @@
                 </div>
             </div>
         </div>
+
+        <div id="part1" class="contact">
+            <h3 class="contact-title">Contactame</h3>
+            <a class="contact-text">¿Aun tienes alguna duda con los servicios que ofrecemos 
+                o<br>quieres solicitar alguno de los servicios para tu empresa?<br>
+                Contacta con nosotros!</a>
+            <div class="contact-container">
+                <div class="contact-social">
+                    <div class="social">
+                        <img class="contact-logo" src="imgs/linkedin.png">
+                        <a class="txt-social">Pedro Fernandez Ramirez</a>
+                    </div>
+                    
+                    <div class="social">
+                        <img class="contact-logo" src="imgs/instagram.png">
+                        <a class="txt-social">Pedro Fernandez Ramirez</a>
+                    </div>
+                    
+                    <div class="social">
+                        <img class="contact-logo" src="imgs/sobre.png">
+                        <a class="txt-social">Pedro Fernandez Ramirez</a>
+                    </div>
+                </div>
+                <div class="contact-container-img">
+                    <img class="contact-img" src="imgs/profile2.png"></img>
+                    <a class="contact-img-txt">Pedro Fernández Ramirez</a>
+                </div>
+            </div>
+        </div>
         <div class="legal"></div>
-
-
-       
-    
     </body>
 </html>
 
