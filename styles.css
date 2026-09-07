@@ -1,0 +1,16 @@
+@font-face { font-family: 'system'; src: local('Helvetica Neue'); }
+@keyframes qf-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.qf-marquee-track { animation: qf-marquee 45s linear infinite; }
+.qf-marquee-track:hover { animation-play-state: paused; }
+body { margin: 0; }
+a { color: #0d9488; text-decoration: none; }
+a:hover { color: #0f766e; }
+@media (max-width: 900px) {
+  .qf-navlinks { display: none !important; }
+  .qf-burger { display: flex !important; }
+  .qf-grid-2, .qf-grid-3, .qf-grid-4, .qf-grid-5, .qf-hero-grid, .qf-form-row { grid-template-columns: 1fr !important; }
+  .qf-sec { padding-left: 20px !important; padding-right: 20px !important; }
+}
+@media (min-width: 901px) {
+  .qf-mobile-menu { display: none !important; }
+}

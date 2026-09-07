@@ -1,161 +1,294 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>QFortum</title>
-        <link rel="stylesheet" href="home-style.css">
-    </head>
-    
-    <body>
-        <div class="navbar-container">
-            <img class="logo-blanco" src="imgs/QfortumW.png">
-            <div class="navbar-elements">
-                <div class="navbar-element"><a class="url" href="index.html"><h4 class="element-text">Home</h4></a></div>
-                <div class="navbar-dropdown">
-                    <button class="url"><h4 class="element-text" >Sistemas de gestion</h4></button>
-                    <div class="dropdown-content">
-                        <a class="dropdown-href" href="SistemasGestion.html">Calidad</a>
-                        <a class="dropdown-href" href="MedioAmbiental.html">Medio Ambiente</a>
-                        <a class="dropdown-href" href="RiesgosLaborales.html">Riesgos Laborales</a>
-                        <a class="dropdown-href" href="ProteccionDatos.html">Proteccion de datos</a>
-                        <a class="dropdown-href" href="Alimentario.html">Alimentario</a>
-                    </div>
-                </div>
-                <div class="navbar-element"><a href="#part1" class="url"><h4 class="element-text">Contacto</h4></a></div>
-            </div>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qualitas Fortum · Consultoría en sistemas de gestión</title>
+<meta name="description" content="Qualitas Fortum, consultoría especializada en sistemas de gestión: calidad, medio ambiente, seguridad y salud, protección de datos y seguridad alimentaria.">
+<link rel="icon" href="assets/Logo-pequeño.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #1e2a32; background: #ffffff; width: 100%;">
+
+  <!-- NAVBAR -->
+  <div style="position: sticky; top: 0; z-index: 100; width: 100%; background: #ffffff; border-bottom: 1px solid #e7ebee; box-sizing: border-box;">
+    <div style="width: 100%; max-width: 1280px; margin: 0 auto; height: 84px; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box;" class="qf-sec">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <img src="assets/logo-qualitas-fortum.png" alt="Qualitas Fortum" style="height: 64px; width: auto; display: block; mix-blend-mode: multiply;">
+      </div>
+      <div class="qf-navlinks" style="display: flex; align-items: center; gap: 22px;">
+        <a href="#inicio" style="font-size: 14px; color: #3d4a52; font-weight: 500; white-space: nowrap;">Inicio</a>
+        <a href="#servicios" style="font-size: 14px; color: #3d4a52; font-weight: 500; white-space: nowrap;">Servicios</a>
+        <a href="#sectores" style="font-size: 14px; color: #3d4a52; font-weight: 500; white-space: nowrap;">Sectores</a>
+        <a href="#proyectos" style="font-size: 14px; color: #3d4a52; font-weight: 500; white-space: nowrap;">Proyectos</a>
+        <a href="#nosotros" style="font-size: 14px; color: #3d4a52; font-weight: 500; white-space: nowrap;">Nosotros</a>
+        <a href="#recursos" style="font-size: 14px; color: #3d4a52; font-weight: 500; white-space: nowrap;">Recursos</a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="#contacto" style="background: #0d9488; color: #ffffff; padding: 11px 22px; border-radius: 6px; font-size: 14.5px; font-weight: 600; white-space: nowrap;">Contacto</a>
+        <button class="qf-burger" style="display: none; width: 40px; height: 40px; border: 1px solid #d6dde1; border-radius: 8px; background: #ffffff; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0;">
+          <div style="width: 18px; height: 2px; background: #16232b; position: relative;">
+            <div style="position: absolute; top: -6px; left: 0; width: 18px; height: 2px; background: #16232b;"></div>
+            <div style="position: absolute; top: 6px; left: 0; width: 18px; height: 2px; background: #16232b;"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="qf-mobile-menu qf-sec" style="display: none; flex-direction: column; padding: 8px 32px 20px; border-top: 1px solid #e7ebee; background: #ffffff;">
+      <a href="#inicio" style="font-size: 15.5px; color: #3d4a52; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #f0f3f4;">Inicio</a>
+      <a href="#servicios" style="font-size: 15.5px; color: #3d4a52; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #f0f3f4;">Servicios</a>
+      <a href="#sectores" style="font-size: 15.5px; color: #3d4a52; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #f0f3f4;">Sectores</a>
+      <a href="#proyectos" style="font-size: 15.5px; color: #3d4a52; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #f0f3f4;">Proyectos</a>
+      <a href="#nosotros" style="font-size: 15.5px; color: #3d4a52; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #f0f3f4;">Nosotros</a>
+      <a href="#recursos" style="font-size: 15.5px; color: #3d4a52; font-weight: 500; padding: 12px 0;">Recursos</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div id="inicio" class="qf-sec" style="width: 100%; display: flex; justify-content: center; padding: 88px 32px 96px; box-sizing: border-box; background: #ffffff;">
+    <div class="qf-hero-grid" style="width: 100%; max-width: 1280px; display: grid; grid-template-columns: minmax(300px, 1.05fr) minmax(260px, 0.95fr); gap: 48px; align-items: center;">
+      <div>
+        <h1 style="font-size: clamp(30px, 4.2vw, 52px); line-height: 1.16; font-weight: 700; margin: 0 0 24px; color: #16232b; text-wrap: pretty;">Consultoría que impulsa sistemas de gestión sólidos y sostenibles</h1>
+        <p style="font-size: 18px; line-height: 1.65; color: #5b6b74; margin: 0 0 36px; max-width: 480px;">Ayudamos a las organizaciones a mejorar su desempeño, cumplir requisitos y generar valor con soluciones a medida.</p>
+        <div style="display: flex; gap: 16px;">
+          <a href="#servicios" style="background: #0d9488; color: #ffffff; padding: 15px 28px; border-radius: 7px; font-size: 15.5px; font-weight: 600;">Nuestros servicios</a>
+          <a href="#contacto" style="background: #ffffff; color: #16232b; padding: 15px 28px; border-radius: 7px; font-size: 15.5px; font-weight: 600; border: 1.5px solid #d6dde1;">Hablemos</a>
         </div>
+      </div>
+      <div style="width: 100%; height: 380px; display: block;; border:1px dashed #cfd8dd; border-radius:16px; background:#f2f6f7; display:flex; align-items:center; justify-content:center; color:#93a2aa; font-size:13.5px; text-align:center; padding:16px; box-sizing:border-box;">Foto: equipo consultor revisando documentos</div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <div id="servicios" class="qf-sec" style="width: 100%; display: flex; justify-content: center; padding: 88px 32px; box-sizing: border-box; background: #f7f9fa;">
+    <div style="width: 100%; max-width: 1280px;">
+      <div style="text-align: center; margin-bottom: 56px;">
+        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: #0d9488; margin-bottom: 12px;">SERVICIOS</div>
+        <h2 style="font-size: clamp(24px, 3vw, 34px); font-weight: 700; color: #16232b; margin: 0;">Soluciones integrales para una gestión más eficiente y responsable</h2>
+      </div>
+      <div id="sectores" class="qf-grid-5" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;">
+        <a href="sistema-calidad.html" style="background: #ffffff; border: 1px solid #e7ebee; border-radius: 12px; padding: 28px 22px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: #e6f5f3; display: flex; align-items: center; justify-content: center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"></path><path d="M5 7h14"></path><path d="M5 7 2 13a3 3 0 0 0 6 0z"></path><path d="M19 7l-3 6a3 3 0 0 0 6 0z"></path><path d="M9 21h6"></path></svg>
+          </div>
+          <div style="font-size: 16.5px; font-weight: 700; color: #16232b;">Calidad</div>
+          <div style="font-size: 13.5px; color: #7c8992; line-height: 1.5;">ISO 9001 y mejora continua</div>
+        </a>
+        <a href="sistema-medioambiente.html" style="background: #ffffff; border: 1px solid #e7ebee; border-radius: 12px; padding: 28px 22px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: #e6f5f3; display: flex; align-items: center; justify-content: center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-7 7-11 4 4 7 7 7 11a7 7 0 0 1-7 7z"></path><path d="M11 20c0-6 3-9 6-11"></path></svg>
+          </div>
+          <div style="font-size: 16.5px; font-weight: 700; color: #16232b;">Medio Ambiente</div>
+          <div style="font-size: 13.5px; color: #7c8992; line-height: 1.5;">ISO 14001 y gestión ambiental</div>
+        </a>
+        <a href="sistema-riesgos-laborales.html" style="background: #ffffff; border: 1px solid #e7ebee; border-radius: 12px; padding: 28px 22px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: #e6f5f3; display: flex; align-items: center; justify-content: center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6z"></path><path d="M9.5 12l1.8 1.8L14.8 10"></path></svg>
+          </div>
+          <div style="font-size: 16.5px; font-weight: 700; color: #16232b;">Riesgos Laborales</div>
+          <div style="font-size: 13.5px; color: #7c8992; line-height: 1.5;">ISO 45001 y prevención</div>
+        </a>
+        <a href="sistema-proteccion-datos.html" style="background: #ffffff; border: 1px solid #e7ebee; border-radius: 12px; padding: 28px 22px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: #e6f5f3; display: flex; align-items: center; justify-content: center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+          </div>
+          <div style="font-size: 16.5px; font-weight: 700; color: #16232b;">Protección de Datos</div>
+          <div style="font-size: 13.5px; color: #7c8992; line-height: 1.5;">Privacidad y seguridad de la información</div>
+        </a>
+        <a href="sistema-alimentario.html" style="background: #ffffff; border: 1px solid #e7ebee; border-radius: 12px; padding: 28px 22px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: #e6f5f3; display: flex; align-items: center; justify-content: center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.2"></circle></svg>
+          </div>
+          <div style="font-size: 16.5px; font-weight: 700; color: #16232b;">Alimentación</div>
+          <div style="font-size: 13.5px; color: #7c8992; line-height: 1.5;">IFS, APPCC y seguridad alimentaria</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- POR QUE ELEGIRNOS -->
+  <div class="qf-sec" style="width: 100%; display: flex; justify-content: center; padding: 88px 32px; box-sizing: border-box; background: #0f2b38;">
+    <div class="qf-hero-grid" style="width: 100%; max-width: 1280px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+      <div>
+        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: #4fd1c5; margin-bottom: 14px;">¿POR QUÉ ELEGIRNOS?</div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          
+            <div style="display: flex; align-items: flex-start; gap: 14px;">
+              <div style="width: 22px; height: 22px; border-radius: 50%; background: #0d9488; flex-shrink: 0; margin-top: 2px;"></div>
+              <div style="font-size: 16.5px; color: #dce6e8; line-height: 1.5;">Experiencia contrastada en múltiples sectores</div>
+            </div>
+          
+            <div style="display: flex; align-items: flex-start; gap: 14px;">
+              <div style="width: 22px; height: 22px; border-radius: 50%; background: #0d9488; flex-shrink: 0; margin-top: 2px;"></div>
+              <div style="font-size: 16.5px; color: #dce6e8; line-height: 1.5;">Consultores expertos y comprometidos</div>
+            </div>
+          
+            <div style="display: flex; align-items: flex-start; gap: 14px;">
+              <div style="width: 22px; height: 22px; border-radius: 50%; background: #0d9488; flex-shrink: 0; margin-top: 2px;"></div>
+              <div style="font-size: 16.5px; color: #dce6e8; line-height: 1.5;">Soluciones prácticas y personalizadas</div>
+            </div>
+          
+            <div style="display: flex; align-items: flex-start; gap: 14px;">
+              <div style="width: 22px; height: 22px; border-radius: 50%; background: #0d9488; flex-shrink: 0; margin-top: 2px;"></div>
+              <div style="font-size: 16.5px; color: #dce6e8; line-height: 1.5;">Acompañamiento cercano en todo el proceso</div>
+            </div>
+          
+        </div>
+      </div>
+      <div class="qf-grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
         
-        <div class="title-container">
-            <h1 class="title">Consultoria de calidad<br>en Almería!</h1>
-            <a class="subtitle"><b>"Impulsamos el éxito y la excelencia en la gestión de la calidad<br>
-             para empresas de todos los tamaños y sectores industriales"</b></a>
-        </div>
+          <div style="background: #143847; border-radius: 14px; padding: 32px 16px; text-align: center;">
+            <div style="font-size: 36px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">+500</div>
+            <div style="font-size: 13.5px; color: #9db5bc; line-height: 1.4;">Proyectos realizados</div>
+          </div>
+        
+          <div style="background: #143847; border-radius: 14px; padding: 32px 16px; text-align: center;">
+            <div style="font-size: 36px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">+12</div>
+            <div style="font-size: 13.5px; color: #9db5bc; line-height: 1.4;">Años de experiencia</div>
+          </div>
+        
+          <div style="background: #143847; border-radius: 14px; padding: 32px 16px; text-align: center;">
+            <div style="font-size: 36px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">100%</div>
+            <div style="font-size: 13.5px; color: #9db5bc; line-height: 1.4;">Comprometidos con nuestros clientes</div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
 
-        <div class="desplegable">
-            <img class="logo" src="imgs/QfortumB.png">
+  <!-- CLIENTES -->
+  <div class="qf-sec" style="width: 100%; display: flex; justify-content: center; padding: 64px 32px; box-sizing: border-box; background: #ffffff;">
+    <div style="width: 100%; max-width: 1280px; text-align: center;">
+      <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: #8a99a3; margin-bottom: 36px;">CLIENTES QUE CONFÍAN EN NOSOTROS</div>
+      <div style="width: 100%; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent 0, #000 90px, #000 calc(100% - 90px), transparent 100%); mask-image: linear-gradient(to right, transparent 0, #000 90px, #000 calc(100% - 90px), transparent 100%);">
+        <div class="qf-marquee-track" style="display: flex; align-items: center; width: max-content;">
+          <img src="assets/clients/belzunces.png" alt="Transportes Antonio Belzunces" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/albedo-solar.png" alt="Albedo Solar" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/aluminios-regoni.png" alt="Aluminios Regoni" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/sedatec.png" alt="Sedatec Corporation" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/salas-aguila.png" alt="Grupo Salas-Águila" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/plus-ultra.png" alt="Plus Ultra Tactical Rescue" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/rami-frio.png" alt="Rami Frío" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/datacol.png" alt="Datacol" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/manzano.png" alt="Manzano" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/matilla.png" alt="Matilla Claraboyas" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/amarres.png" alt="Empresa Boliviana de Amarres" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/moya.png" alt="Moya innovación y energía" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/belzunces.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/albedo-solar.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/aluminios-regoni.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/sedatec.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/salas-aguila.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/yasu.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/plus-ultra.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/rami-frio.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/datacol.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/manzano.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/matilla.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/amarres.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
+          <img src="assets/clients/moya.png" alt="" aria-hidden="true" style="height: 68px; width: auto; max-width: 200px; object-fit: contain; margin-right: 64px; filter: grayscale(1); opacity: 0.6; mix-blend-mode: multiply;">
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="about-us"> 
-            <div class="about-us-title-container"><h3 class="about-us-title">Sobre Nosotros!</h3></div>
-            <div class="about-us-container">
-                <p class="about-us-txt">
-                    En Qualitas Fortum Impulsamos la excelencia en la implementación de sistemas de gestión
-                    reconocidas a nivel mundial. Tenemos mas de 12 años de experiencia en el sector en los
-                    cuales hemos perfeccionado nuestros servicios ofreciendo una respuesta mas personalizada,
-                    mejorando el cumplimiento normativo y los procesos internos, potenciando así la competitividad
-                    de nuestros clientes.
-                </p>
-                <div class="about-us-img"></div>
-            </div>
+  <!-- CONTACTO -->
+  <div id="contacto" class="qf-sec" style="width: 100%; display: flex; justify-content: center; padding: 88px 32px; box-sizing: border-box; background: #f7f9fa;">
+    <div style="width: 100%; max-width: 900px;">
+      <h2 style="font-size: clamp(24px, 3vw, 32px); font-weight: 700; color: #16232b; margin: 0 0 12px; text-align: center;">Hablemos de tu proyecto</h2>
+      <p style="font-size: 16px; color: #5b6b74; text-align: center; margin: 0 0 40px;">Cuéntanos tus necesidades y te ayudaremos a encontrar la mejor solución para tu organización.</p>
+      <form id="qf-contacto-form" novalidate style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="qf-form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <input name="nombre" required autocomplete="name" placeholder="Nombre*" style="padding: 14px 16px; border: 1px solid #d6dde1; border-radius: 8px; font-size: 14.5px; background: #ffffff; box-sizing: border-box; width: 100%;">
+          <input name="empresa" required autocomplete="organization" placeholder="Empresa*" style="padding: 14px 16px; border: 1px solid #d6dde1; border-radius: 8px; font-size: 14.5px; background: #ffffff; box-sizing: border-box; width: 100%;">
         </div>
+        <div class="qf-form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <input name="email" type="email" required autocomplete="email" placeholder="Email*" style="padding: 14px 16px; border: 1px solid #d6dde1; border-radius: 8px; font-size: 14.5px; background: #ffffff; box-sizing: border-box; width: 100%;">
+          <input name="telefono" type="tel" autocomplete="tel" placeholder="Teléfono" style="padding: 14px 16px; border: 1px solid #d6dde1; border-radius: 8px; font-size: 14.5px; background: #ffffff; box-sizing: border-box; width: 100%;">
+        </div>
+        <select name="servicio" style="padding: 14px 16px; border: 1px solid #d6dde1; border-radius: 8px; font-size: 14.5px; background: #ffffff; color: #5b6b74;">
+          <option value="">¿En qué podemos ayudarte?</option>
+          <option>Sistema de gestión de calidad</option>
+          <option>Medio ambiente</option>
+          <option>Seguridad y salud</option>
+          <option>Protección de datos</option>
+          <option>Alimentación</option>
+        </select>
+        <textarea name="mensaje" rows="5" placeholder="Cuéntanos brevemente tu proyecto" style="padding: 14px 16px; border: 1px solid #d6dde1; border-radius: 8px; font-size: 14.5px; background: #ffffff; box-sizing: border-box; width: 100%; font-family: inherit; resize: vertical;"></textarea>
+        <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: #5b6b74; line-height: 1.55;">
+          <input name="privacidad" type="checkbox" required style="margin-top: 3px; width: 16px; height: 16px; accent-color: #0d9488; flex-shrink: 0;">
+          <span>He leído y acepto la <a href="legal.html#privacidad">política de privacidad</a>.</span>
+        </label>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0;">
+        <button type="submit" style="background: #0d9488; color: #ffffff; padding: 15px; border: none; border-radius: 8px; font-size: 15.5px; font-weight: 600; cursor: pointer;">Enviar mensaje</button>
+        <div id="qf-form-status" role="status" aria-live="polite" style="display: none; padding: 14px 16px; border-radius: 8px; font-size: 14px; line-height: 1.55;"></div>
+      </form>
+    </div>
+  </div>
 
-        <div class="container-trabajos">
-            <h2 class="subtitle-trabajos">¿En que Sectores Trabajamos?</h2>
-            <div class="container-cards">
-                <a href="SistemasGestion.html" class="container-card">
-                    <h3 class="title-ISO">Calidad</h3>
-                    <p class="content-SG">Garantiza la calidad de los productos y servicios</p>
-                </a>
-                <a href="MedioAmbiental.html" class="container-card">
-                    <h3 class="title-ISO">Medio Ambiente</h3>
-                    <p class="content-SG">Mejora del desempeno medioambiental</p>
-                </a>
-                <a href="RiesgosLaborales.html" class="container-card">
-                    <h3 class="title-ISO">Riesgos Laborales</h3>
-                    <p class="content-SG">Gestión de la seguridad y la salud en el trabajo</p>
-                </a>
-                <a href="ProteccionDatos.html" class="container-card">
-                    <h3 class="title-ISO">Protección de Datos</h3>
-                    <p class="content-SG">Privacidad y seguridad de la información</p>
-                </a>
-                <a href="Alimentario.html" class="container-card">
-                    <h3 class="title-ISO">Alimentación</h3>
-                    <p class="content-SG">Manrtenimiento de la calidad del producto alimentario</p>
-                </a>
-            </div>
+  <!-- FOOTER -->
+  <div id="nosotros" class="qf-sec" style="width: 100%; display: flex; justify-content: center; padding: 56px 32px 32px; box-sizing: border-box; background: #0f2b38;">
+    <div style="width: 100%; max-width: 1280px;">
+      <div class="qf-grid-4" style="display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid #1e4351;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <img src="assets/Logo-pequeño.png" alt="Qualitas Fortum" style="width: 32px; height: 32px; display: block; background: #ffffff; border-radius: 50%; box-sizing: border-box; padding: 4px;">
+            <div style="font-size: 15.5px; font-weight: 700; color: #ffffff;">QUALITAS FORTUM</div>
+          </div>
+          <p style="font-size: 13.5px; color: #8fa8b0; line-height: 1.6; max-width: 280px; margin: 0;">Consultoría especializada en sistemas de gestión que generan valor, confianza y futuro.</p>
         </div>
+        <div id="recursos">
+          <div style="font-size: 13.5px; font-weight: 700; color: #ffffff; margin-bottom: 16px;">Servicios</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="sistema-calidad.html" style="font-size: 13.5px; color: #8fa8b0;">Calidad</a>
+            <a href="sistema-medioambiente.html" style="font-size: 13.5px; color: #8fa8b0;">Medio Ambiente</a>
+            <a href="sistema-riesgos-laborales.html" style="font-size: 13.5px; color: #8fa8b0;">Seguridad y Salud</a>
+            <a href="sistema-proteccion-datos.html" style="font-size: 13.5px; color: #8fa8b0;">Protección de Datos</a>
+            <a href="sistema-alimentario.html" style="font-size: 13.5px; color: #8fa8b0;">Alimentación</a>
+          </div>
+        </div>
+        <div id="proyectos">
+          <div style="font-size: 13.5px; font-weight: 700; color: #ffffff; margin-bottom: 16px;">Enlaces</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="#proyectos" style="font-size: 13.5px; color: #8fa8b0;">Proyectos</a>
+            <a href="#recursos" style="font-size: 13.5px; color: #8fa8b0;">Recursos</a>
+            <a href="#nosotros" style="font-size: 13.5px; color: #8fa8b0;">Sobre nosotros</a>
+            <a href="#contacto" style="font-size: 13.5px; color: #8fa8b0;">Contacto</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 13.5px; font-weight: 700; color: #ffffff; margin-bottom: 16px;">Contacto</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="font-size: 13.5px; color: #8fa8b0;">info@qfortum.es</div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 24px; flex-wrap: wrap; gap: 12px;">
+        <div style="font-size: 12.5px; color: #6d8891;">© 2026 Qualitas Fortum. Todos los derechos reservados.</div>
+        <div style="display: flex; gap: 24px;">
+          <a href="legal.html#condiciones" style="font-size: 12.5px; color: #6d8891;">Aviso legal</a>
+          <a href="legal.html#privacidad" style="font-size: 12.5px; color: #6d8891;">Política de privacidad</a>
+          <a href="legal.html#privacidad" style="font-size: 12.5px; color: #6d8891;">Política de cookies</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="distincion"> 
-            <div class="about-us-title-container"><h3 class="about-us-title">¿Que nos distingue?</h3></div>
-            <div class="distincion-container">
-                <div class="cards-container">
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="card-img-container">
-                                <img class="card-img" src="imgs/bulbo.png">
-                            </div>
-                            <div class="card-txt-container">
-                                <a class="card-txt">Experiencia y conocimiento profundo</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img-container">
-                                <img class="card-img" src="imgs/diana.png">
-                            </div>
-                            <div class="card-txt-container">
-                                <a class="card-txt">Enfoque centrado en el cliente</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="card-img-container">
-                                <img class="card-img" src="imgs/senal-alt-2.png">
-                            </div>
-                            <div class="card-txt-container">
-                                <a class="card-txt">Resultados comprobados</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img-container">
-                                <img class="card-img" src="imgs/otorgar.png">
-                            </div>
-                            <div class="card-txt-container">
-                                <a class="card-txt">Compromiso con la excelencia</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="part1" class="contact">
-            <h3 class="contact-title">Contáctanos</h3>
-            <p class="contact-text">¿Tienes alguna duda sobre nuestros servicios o deseas solicitar una consultoría para tu empresa? Nos encantaría conocerle y ayudarle a mejorar sus procesos.</p>
-            <div class="contact-container">
-                <div class="contact-container-img">
-                    <img class="contact-img" src="imgs/profile2.png" alt="Pedro Fernández Ramirez">
-                    <h4 class="contact-img-txt">Pedro Fernández Ramírez</h4>
-                    <p style="color: #888888; font-size: 0.95rem; margin-top: 0.5rem;">Consultor de Gestión de Calidad</p>
-                </div>
-                <div class="contact-social">
-                    <a href="https://www.linkedin.com/in/pedrofernandezramirez" target="_blank" class="social">
-                        <img class="contact-logo" src="imgs/linkedin.png" alt="LinkedIn">
-                        <span class="txt-social">LinkedIn</span>
-                    </a>
-                    
-                    <a href="https://www.instagram.com/pedrofernandezramirez" target="_blank" class="social">
-                        <img class="contact-logo" src="imgs/instagram.png" alt="Instagram">
-                        <span class="txt-social">Instagram</span>
-                    </a>
-                    
-                    <a href="mailto:info@qfortum.com" class="social">
-                        <img class="contact-logo" src="imgs/sobre.png" alt="Email">
-                        <span class="txt-social">info@qfortum.com</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="legal">
-            <div class="legal-links">
-                <a href="Condiciones.html" class="legal-link">Términos y Condiciones</a>
-                <a href="PoliticaPrivacidad.html" class="legal-link">Política de Privacidad</a>
-                <a href="Condiciones.html#aviso" class="legal-link">Aviso Legal</a>
-            </div>
-            <p class="legal-copyright">© 2024 QFortum - Consultoría de Calidad. Todos los derechos reservados.</p>
-        </div>
-    </body>
+</div>
+<script>
+(function () {
+  var burger = document.querySelector('.qf-burger');
+  var menu = document.querySelector('.qf-mobile-menu');
+  if (!burger || !menu) return;
+  burger.addEventListener('click', function () {
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') menu.style.display = 'none';
+  });
+})();
+</script>
+<script src="contacto.js"></script>
+</body>
 </html>
-
-
