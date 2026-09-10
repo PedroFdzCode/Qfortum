@@ -10,6 +10,7 @@ a:hover { color: #0f766e; }
   .qf-burger { display: flex !important; }
   .qf-grid-2, .qf-grid-3, .qf-grid-4, .qf-grid-5, .qf-hero-grid, .qf-form-row { grid-template-columns: 1fr !important; }
   .qf-sec { padding-left: 20px !important; padding-right: 20px !important; }
+  .qf-otros { flex-direction: column !important; align-items: flex-start !important; gap: 18px !important; }
 }
 @media (min-width: 901px) {
   .qf-mobile-menu { display: none !important; }
