@@ -10,6 +10,7 @@
  * no necesita cambios siempre que el endpoint acepte POST con JSON.
  */
 (function () {
+  // var DESTINATARIO = 'pedrofdezs01@gmail.com';
   var DESTINATARIO = 'p.fernandez@qfortum.es';
   var ENDPOINT = 'https://formsubmit.co/ajax/' + DESTINATARIO;
 
@@ -87,7 +88,7 @@
         show('ok', 'Mensaje enviado. Gracias por contactar con Qualitas Fortum; te responderemos lo antes posible.');
       })
       .catch(function () {
-        show('error', 'No hemos podido enviar el mensaje. Escríbenos a ' + DESTINATARIO + ' o llámanos al 950 882 592.');
+        show('error', 'No hemos podido enviar el mensaje. Escríbenos a ' + DESTINATARIO);
       })
       .then(function () {
         button.disabled = false;
